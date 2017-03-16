@@ -22,7 +22,7 @@ public class Driver {
 
 		conf1.set("noGram", args[2]);
 		
-		Job job1 = Job.getInstance();
+		Job job1 = Job.getInstance(conf1);
 		job1.setJobName("NGram");
 		job1.setJarByClass(Driver.class);
 		
